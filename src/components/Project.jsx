@@ -34,7 +34,7 @@ const Project = () => {
         <section id ="Project">
               <div className="w-full h-px bg-white opacity-20 mb-10"></div>
             <div id="projects" class="flex flex-col py-20 lg:py-20 px-4 lg:px-20 scroll-mt-24">
-                <h1 class="mb-10 text-2xl font-black uppercase text-center text-purple-400">Projects</h1>
+                <h1 class="mb-5 text-2xl font-black uppercase text-center text-purple-400">Projects</h1>
 
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
                     {project.map((prj,index) => (

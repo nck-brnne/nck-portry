@@ -7,7 +7,7 @@ const TechStack = () => {
       <section id ="TechStack">
         <div className="w-full grid grid-cols-1 py-20 mt-5">
            <div className="w-full h-px bg-white opacity-20 mb-11"></div>
-             <h1 class="mb-10 text-2xl font-black uppercase text-center text-purple-400">Tech Stack</h1>
+             <h1 class="mb-5 text-2xl font-black uppercase text-center text-purple-400">Tech Stack</h1>
             <div className="flex flex-col gap-10">
               
                 <div>
