@@ -32,14 +32,15 @@ const Project = () => {
   return (
    <FadeInSection>
         <section id ="Project">
-            <div id="projects" class="flex flex-col rounded-2xl borde py-10 lg:py-28 px-4 lg:px-20 scroll-mt-24">
+              <div className="w-full h-px bg-white opacity-20 mb-10"></div>
+            <div id="projects" class="flex flex-col py-20 lg:py-20 px-4 lg:px-20 scroll-mt-24">
                 <h1 class="mb-10 text-2xl font-black uppercase text-center text-purple-400">Projects</h1>
 
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
                     {project.map((prj,index) => (
-                        <div class="group bg-neutral-950/80 flex flex-col justify-between h-full border-white/10 rounded-lg p-5 border-[1px] transition-all duration-300 ease-in-out hover:shadow-sm hover:border-green-500 hover:bg-orange-900/10 cursor-default">
+                        <div class="group bg-neutral-950/80 flex flex-col justify-between h-full border-white/10 rounded-lg p-5 border-[1px] transition-all duration-300 ease-in-out hover:shadow-sm hover:border-purple-500 hover:bg-orange-900/5 cursor-default">
                                 <div class="flex flex-col">
-                                    <h1 class="font-manrope text-purple-500 text-2xl font-bold group-hover:text-green-500 transition-all duration-300 ease-in-out">
+                                    <h1 class="font-manrope text-2xl font-bold group-hover:text-purple-50 transition-all duration-300 ease-in-out">
                                     {prj.name}
                                         </h1>
                                         <p className="font-manrope-semibold text-lg text-gray-300 mt-3 text-justify">{prj.desc}

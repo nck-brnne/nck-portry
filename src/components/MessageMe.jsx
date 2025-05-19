@@ -6,7 +6,8 @@ import FadeInSection from './FadeInSection';
 const MessageMe = () => {
   return (
   <FadeInSection>
-    <div className="max-w-screen-xl mx-auto pt-3 flex flex-col items-center h-screen">
+       <div className="w-full h-px bg-white opacity-20 mb-10"></div>
+      <div id="MessageMe" className="max-w-screen-xl mx-auto pt-3 flex flex-col items-center">
         {/* Heading and Description */}
         <div className="flex flex-col items-center justify-center text-center w-full py-6 gap-6">
           <h2 className="text-purple-500 text-3xl lg:text-7xl px-6 text-primary tracking-[10px] lg:tracking-[50px] text-center font-black">
