@@ -95,14 +95,23 @@ const Body = () => {
                 <div class="rounded-full bg-pink-500 w-3 h-3 mr-2"></div>
                 Web Development
               </div>
+              <div
+                class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
+                        flex flex-row items-center px-6 py-1 mr-1 text-md 
+                        border border-white/10 hover:border-purple-500 
+                        rounded-full text-center"
+              >
+                <div class="rounded-full bg-yellow-500 w-3 h-3 mr-2"></div>
+                Logo Design
+              </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center text-center mt-6">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-center mt-11">
               <a
                 href="#MessageMe"
                 className="w-auto sm:w-full transition-all duration-300 ease-in-out group relative inline-flex items-center justify-center 
-                                  text-xs sm:text-sm font-light text-white-300 bg-purple-600/40
+                                  text-xs sm:text-sm font-light text-white-300 bg-neutral-600/40
                                   px-6 sm:px-10 lg:px-12 py-2 sm:py-2.5 rounded-md sm:rounded-lg border border-purple-200 
-                                  hover:text-purple-300 hover:bg-purple-500/20 hover:border-purple-700/80"
+                                  hover:text-sky-400 hover:bg-purple-200/20 hover:border-sky-400"
               >
                 <span className="transition-all duration-300 ease-in-out group-hover:mr-5">
                   LET'S WORK TOGETHER
@@ -118,7 +127,7 @@ const Body = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="absolute right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out text-orange-700"
+                  className="absolute right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out text-sky-400"
                 >
                   <path d="M5 12h14" />
                   <path d="m12 5 7 7-7 7" />
@@ -128,9 +137,9 @@ const Body = () => {
               <a
                 href="#Project"
                 className="w-auto sm:w-full transition-all duration-300 ease-in-out group relative inline-flex items-center justify-center 
-                      text-xs sm:text-sm font-light text-white-300 bg-purple-600/40 
-                      px-6 sm:px-10 lg:px-12 py-2 sm:py-2.5 rounded-md sm:rounded-lg border border-neutral-200 hover:border-purple-500  hover:bg-purple-200/20
-                       hover:border-purple-700/80"
+                      text-xs sm:text-sm font-light text-white-300 bg-neutral-600/40 
+                      px-6 sm:px-10 lg:px-12 py-2 sm:py-2.5 rounded-md sm:rounded-lg border border-neutral-200 hover:border-sky-400
+                      hover:bg-purple-200/20 hover:border-purple-700/80  hover:text-sky-400"
               >
                 PROJECTS
               </a>

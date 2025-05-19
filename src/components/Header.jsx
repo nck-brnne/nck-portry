@@ -31,6 +31,7 @@ const Header = () => {
                 { name: 'Tech Stack', link: '#TechStack' },
                 { name: 'Projects', link: '#Project' },
                 { name: 'Recent Works', link: '#Graphics' },
+                { name: 'Contact Me', link: '#MessageMe' },
               ].map((item, index) => (
                 <a
                   key={index}

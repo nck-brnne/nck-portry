@@ -21,11 +21,6 @@ const project = [
         their population through charts like bar and pie charts, making it easy to see how many members are in each org. Built with Django and Python.`,
     stack: ['Python', 'TablePlus', 'Django', 'Bootstrap', 'PHP'],
   },
-  {
-    name: 'IloveYou',
-    desc: 'Miss na miss na kita hinayopak ka',
-    stack: ['react', 'ssbjw'],
-  },
 ];
 const Project = () => {
   return (
