@@ -5,20 +5,25 @@
 
 
 :root {
-    --background: 0 0% 10%; /* Example dark gray */
-    --foreground: 0 0% 100%; /* White text */
-    --border: 0 0% 50%; /* Example border */
-    
-  }
-  
-  body {
-    @apply font-sans antialiased m-0;
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
-  }
-  
-  *, *::before, *::after {
-    @apply box-border;
-    border: 0 solid hsl(var(--border));
-  }
+  --background: 0 0% 10%;
+  /* Example dark gray */
+  --foreground: 0 0% 100%;
+  /* White text */
+  --border: 0 0% 50%;
+  /* Example border */
 
+}
+
+body {
+  @apply font-sans antialiased m-0;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+
+}
+
+*,
+*::before,
+*::after {
+  @apply box-border;
+  border: 0 solid hsl(var(--border));
+}

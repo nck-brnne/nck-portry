@@ -1,9 +1,8 @@
 import React from 'react';
-import { Columns } from 'react-feather';
 
 const images = [
   '/data/homies.jpg',
-  '/data/Solitude.jpg',
+  '/data/solitude.jpg',
   '/data/lambo.jpg',
   '/data/yz.jpg',
   '/data/Lisa.jpg',
@@ -19,7 +18,7 @@ const GraphicsGrid = () => {
     <div className="columns-1 sm:Columns-2 lg:columns-3 py-10 md:py-10 gap-3">
       {images.map((src, index) => (
         <div key={index} className="mb-4 break-inside-avoid">
-          <img src={src} className="w-full object-cover" />
+          <img src={src} alt="" className="w-full object-cover" />
         </div>
       ))}
     </div>
