@@ -7,16 +7,18 @@ const FadeInSection = ({ children }) => {
   useEffect(() => {
     const currentRef = ref.current;
 
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setVisible(true);
-      } else {
-         setVisible(false);
-      }
-
-    }, {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        } else {
+          setVisible(false);
+        }
+      },
+      {
         threshold: 0.1,
-    });
+      }
+    );
 
     if (currentRef) {
       observer.observe(currentRef);
@@ -29,7 +31,7 @@ const FadeInSection = ({ children }) => {
 
   return (
     <div
-       ref={ref}
+      ref={ref}
       className={`transition-opacity duration-700 ease-out transform ${
         isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-5'
       }`}

@@ -1,9 +1,9 @@
-import { useRef } from "react"
-import { useState } from "react"
+import { useRef } from 'react';
+import { useState } from 'react';
 
 export default function IconButton({ children, text, color, ...props }) {
-  const [hovered, setHovered] = useState(false)
-  const ref = useRef(null)
+  const [hovered, setHovered] = useState(false);
+  const ref = useRef(null);
 
   return (
     <button
@@ -11,7 +11,7 @@ export default function IconButton({ children, text, color, ...props }) {
       onMouseLeave={() => setHovered(false)}
       className={`
         flex p-2 items-center rounded-lg
-        text-white ${color || "bg-gray-600"}
+        text-white ${color || 'bg-gray-600'}
       `}
       {...props}
     >
@@ -25,5 +25,5 @@ export default function IconButton({ children, text, color, ...props }) {
         </span>
       </div>
     </button>
-  )
+  );
 }
