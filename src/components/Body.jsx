@@ -41,7 +41,7 @@ const Body = () => {
           {/* Works */}
           <div class="grid grid-cols-1 xl:grid-cols-2 h-fit justify-center items-center lg:justify-start gap-5">
 
-              <div className="flex flex-wrap gap-3 justify-center md:justify-start mt-8">
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start mt-8">
                     <div className="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
                       flex flex-row items-center px-6 py-1 mr-1 text-md 
                       border border-white/10  hover:border-purple-500 

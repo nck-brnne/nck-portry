@@ -38,7 +38,7 @@ const TechStack = () => {
                        className="w-7 h-7 object-contain group-hover:scale-110 transition-transform duration-300"
                     style={{ color: 'transparent' }}
                   />
-                  <p className="text-xs font-manrope text-gray-200 group-hover:text-green-500 pt-2">
+                  <p className="text-xs font-manrope text-gray-200 group-hover:text-purple-500 pt-2">
                     {tool.name}
                   </p>
                 </div>
