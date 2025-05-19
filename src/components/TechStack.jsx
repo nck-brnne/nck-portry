@@ -26,7 +26,8 @@ const TechStack = () => {
                       ].map(tool => (
                 <div
                   key={tool.name}
-                  className="group flex flex-col items-center justify-center border border-white/10 hover:border-green-500 rounded-xl p-4 w-20 h-20 hover:bg-green-950/20 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
+                  className="group flex flex-col items-center justify-center border border-white/10 hover:border-green-500 rounded-xl p-4 w-20 h-20
+                  hover:bg-green-950/20 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
                 >
                   <img
                     alt={tool.name}
