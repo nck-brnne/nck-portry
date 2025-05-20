@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import Body from './components/Body.jsx';
+import Hero from './components/Hero.jsx';
 import TechStack from './components/TechStack.jsx';
 import Project from './components/Project.jsx';
 import Graphics from './components/Graphics.tsx';
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <Body />
+      <Hero />
       <TechStack />
       <Project />
       <Graphics />

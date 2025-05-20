@@ -1,11 +1,10 @@
 import React from 'react';
 import { GitHub, Twitter, Facebook, Instagram, Linkedin } from 'react-feather';
 import IconButton from './IconButton';
-import FadeInSection from './FadeInSection';
 
 const MessageMe = () => {
   return (
-    <FadeInSection>
+    <section className="bg-gray-200 dark:bg-gray-900 text-black dark:text-white">
       <section id="MessageMe">
         <div className="w-full h-px bg-white opacity-20 mb-10"></div>
         <div className="max-w-screen-xl mx-auto pt-3 flex flex-col items-center">
@@ -49,7 +48,7 @@ const MessageMe = () => {
           </div>
         </div>
       </section>
-    </FadeInSection>
+    </section>
   );
 };
 export default MessageMe;

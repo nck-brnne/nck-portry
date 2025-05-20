@@ -1,20 +1,19 @@
 import React from 'react';
-import FadeInSection from '../components/FadeInSection';
 
-const Body = () => {
+const Hero = () => {
   return (
-    <FadeInSection>
-      <section id="Body" className="px-5 sm:px-6 lg:px-8">
+    <section className="bg-gray-200 dark:bg-gray-900 text-black dark:text-white">
+      <section id="Hero" className="px-5 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col py-20 lg:pt-24">
           <div className="flex flex-col items-center md:items-start">
-            <div className="inline-flex items-center rounded-xl border border-white/20 px-4 py-2 text-sm font-medium mt-10">
+            <div className="inline-flex items-center rounded-xl border border-black/20 dark:border-white/20 px-4 py-2 text-sm font-medium mt-10">
               <span className="relative flex h-3 w-3 mr-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-purple-400 opacity-75"></span>
-                <span className="relative inline-flex h-3 w-3 rounded-full bg-purple-400"></span>
+                <span className="relative inline-flex h-3 w-3 rounded-full bg-green-400"></span>
               </span>
               <span className="font-manrope"> Available for work </span>
             </div>
-            <h2 className="mt-5 mb-5 text-neutral-300 text-xl text-center md:text-left">
+            <h2 className="mt-5 mb-5  text-xl text-center md:text-left">
               Hi, I'm{' '}
               <span className="font-bold italic text-purple-500 ml-1">
                 NICK BRIENNE
@@ -24,16 +23,16 @@ const Body = () => {
 
             <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black text-center md:text-left">
               Creating
-              <span className="mx-2 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-[length:200%_100%] bg-clip-text text-transparent animate-gradient-x">
+              <span className="mx-2 bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 bg-clip-text text-transparent animated-gradient">
                 Visual Design
               </span>
               <span className="mx-3 lg:mx-3 pr-[2px] ">and</span>
-              <span className="mx-2 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-[length:200%_100%] bg-clip-text text-transparent animate-gradient-x">
+              <span className="mx-2 bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 bg-clip-text text-transparent animated-gradient">
                 Purposeful Graphics.
               </span>
             </h1>
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-2 mt-10 gap-3 md:gap-10 text-justify lg:text-l font-light tracking-narrow text-gray-50">
+          <div className=" grid grid-cols-1 md:grid-cols-2 mt-10 gap-3 md:gap-10 text-justify lg:text-l font-light tracking-narro">
             <p className="font-manrope-semibold">
               I LOVE TO DESIGN. ANYTHING I IMAGINE (AS LONG AS IT’S POSSIBLE), I
               CAN BRING TO LIFE. LOGOS, POSTERS, SOCIAL MEDIA CONTENT, BRAND
@@ -53,7 +52,7 @@ const Body = () => {
               <div
                 className="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
                       flex flex-row items-center px-6 py-1 mr-1 text-md 
-                      border border-white/10  hover:border-purple-500 
+                      border border-black/30 dark:border-white/10 hover:border-purple-500 
                       rounded-full text-center"
               >
                 <div class="rounded-full bg-emerald-500 w-3 h-3 mr-2"></div>
@@ -62,7 +61,7 @@ const Body = () => {
               <div
                 class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
                       flex flex-row items-center px-6 py-1 mr-1 text-md 
-                      border border-white/10 hover:border-purple-500 
+                      border border-black/30 dark:border-white/20 hover:border-purple-500 
                       rounded-full text-center"
               >
                 <div class="rounded-full bg-red-500 w-3 h-3 mr-2"></div>
@@ -71,7 +70,7 @@ const Body = () => {
               <div
                 class="cursor-pointer hover:bg-purple-950/40   transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
-                        border border-white/10 hover:border-purple-500 
+                        border border-black/30 dark:border-white/20 hover:border-purple-500 
                         rounded-full text-center"
               >
                 <div class="rounded-full bg-cyan-500 w-3 h-3 mr-2"></div>
@@ -80,7 +79,7 @@ const Body = () => {
               <div
                 class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
-                        border border-white/10 hover:border-purple-500 
+                        border border-black/30 dark:border-white/20 hover:border-purple-500 
                         rounded-full text-center"
               >
                 <div class="rounded-full bg-purple-500 w-3 h-3 mr-2"></div>
@@ -89,7 +88,7 @@ const Body = () => {
               <div
                 class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
-                        border border-white/10 hover:border-purple-500 
+                        border border-black/30 dark:border-white/20 hover:border-purple-500 
                         rounded-full text-center"
               >
                 <div class="rounded-full bg-pink-500 w-3 h-3 mr-2"></div>
@@ -98,7 +97,7 @@ const Body = () => {
               <div
                 class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
-                        border border-white/10 hover:border-purple-500 
+                        border border-black/30 dark:border-white/20 hover:border-purple-500 
                         rounded-full text-center"
               >
                 <div class="rounded-full bg-yellow-500 w-3 h-3 mr-2"></div>
@@ -147,7 +146,7 @@ const Body = () => {
           </div>
         </div>
       </section>
-    </FadeInSection>
+    </section>
   );
 };
-export default Body;
+export default Hero;

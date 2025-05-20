@@ -1,5 +1,4 @@
 import React from 'react';
-import FadeInSection from './FadeInSection';
 
 const project = [
   {
@@ -24,7 +23,7 @@ const project = [
 ];
 const Project = () => {
   return (
-    <FadeInSection>
+    <section className="bg-gray-200 dark:bg-gray-900 text-black dark:text-white">
       <section id="Project">
         <div className="w-full h-px bg-white opacity-20 mb-10"></div>
         <div
@@ -37,18 +36,18 @@ const Project = () => {
 
           <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
             {project.map((prj, index) => (
-              <div class="group bg-neutral-950/80 flex flex-col justify-between h-full border-white/10 rounded-lg p-5 border-[1px] transition-all duration-300 ease-in-out hover:shadow-sm hover:border-purple-500 hover:bg-orange-900/5 cursor-default">
+              <div class="group bg-neutral-400/30 flex flex-col justify-between h-full border-white/10 rounded-lg p-5 border-[1px] transition-all duration-300 ease-in-out hover:shadow-sm hover:border-purple-500 hover:bg-orange-900/5 cursor-default">
                 <div class="flex flex-col">
-                  <h1 class="font-manrope text-2xl font-bold group-hover:text-purple-50 transition-all duration-300 ease-in-out">
+                  <h1 class="font-manrope text-2xl font-bold group-hover:text-purple-600 transition-all duration-300 ease-in-out">
                     {prj.name}
                   </h1>
-                  <p className="font-manrope-semibold text-lg text-gray-300 mt-3 text-justify">
+                  <p className="font-manrope-semibold text-lg text-white-300 mt-3 text-justify">
                     {prj.desc}
                   </p>
                 </div>
                 <div class="flex flex-wrap gap-2 justify-start mt-5">
                   {prj.stack.map((tchstack, index) => (
-                    <span class="text-xs rounded-full px-4 py-1 bg-neutral-900 border border-purple-500 cursor-default">
+                    <span class="text-xs rounded-full px-4 py-1 bg-neutral-500 border border-purple-700 cursor-default">
                       {tchstack}
                     </span>
                   ))}
@@ -58,7 +57,7 @@ const Project = () => {
           </div>
         </div>
       </section>
-    </FadeInSection>
+    </section>
   );
 };
 

@@ -11,6 +11,7 @@ const images = [
   '/data/stygian.jpg',
   '/data/fanta.jpg',
   '/data/rentcont.jpg',
+  '/data/grain.jpg',
 ];
 
 const GraphicsGrid = () => {
