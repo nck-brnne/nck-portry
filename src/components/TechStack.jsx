@@ -2,16 +2,15 @@ import React from 'react';
 
 const TechStack = () => {
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black dark:text-white">
+    <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
       <section id="TechStack" className="px-5 sm:px-6 lg:px-8">
         <div className="w-full grid grid-cols-1 py-20">
-          <div className="w-full h-px bg-white opacity-20 mb-11"></div>
-          <h1 class="mb-5 text-2xl font-black uppercase text-center text-purple-400">
+          <h1 class="mb-5 text-2xl font-black uppercase text-center text-purple-500">
             Tech Stack
           </h1>
           <div className="flex flex-col gap-10">
             <div>
-              <h2 className="font-manrope text-md mb-4 text-white-400 uppercase text-center">
+              <h2 className="text-md mb-4 text-white-200/10 uppercase text-center">
                 🚀 Framework and Database Development{' '}
               </h2>
               <div className="flex flex-wrap justify-center gap-3">
@@ -36,7 +35,7 @@ const TechStack = () => {
                       className="w-7 h-7 object-contain group-hover:scale-110 transition-transform duration-300"
                       style={{ color: 'transparent' }}
                     />
-                    <p className="text-xs font-manrope text-white-400 group-hover:text-purple-600 pt-2">
+                    <p className="text-xs text-white-400 group-hover:text-purple-600 pt-2">
                       {tool.name}
                     </p>
                   </div>
@@ -44,7 +43,7 @@ const TechStack = () => {
               </div>
             </div>
             <div>
-              <h2 className="font-manrope text-md mb-4 text-white-400 uppercase text-center">
+              <h2 className="text-md mb-4 text-white-200/10 uppercase text-center">
                 🎨 Design
               </h2>
               <div className="flex flex-wrap justify-center gap-3">
@@ -69,7 +68,7 @@ const TechStack = () => {
                       src={tool.icon}
                       style={{ color: 'transparent' }}
                     />
-                    <p className="text-xs font-manrope text-white-400 group-hover:text-purple-600 pt-2 whitespace-nowrap text-center">
+                    <p className="text-xs text-white-400 group-hover:text-purple-600 pt-2 whitespace-nowrap text-center">
                       {tool.name}
                     </p>
                   </div>

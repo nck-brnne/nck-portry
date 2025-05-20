@@ -7,10 +7,10 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black dark:text-white">
+    <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
       <div className="fixed top-0 left-0 right-0 z-50 px-4 py-4">
-        <div className="max-w-7xl mx-auto border border-black/20 dark:border-white/20 rounded-2xl bg-transparent backdrop-blur-md">
-          <div className="flex justify-between items-center px-8 py-4">
+        <div className="max-w-7xl mx-auto border border-black/10 dark:border-white/10 rounded-2xl bg-transparent backdrop-blur-md">
+          <div className="flex justify-between items-center px-8 py-3">
             <div className="flex items-center">
               <a className="flex items-center" href="/Body">
                 {/* Logo for Light Mode */}
@@ -49,7 +49,7 @@ const Header = () => {
                   <a
                     key={index}
                     href={item.link}
-                    className="font-manrope text-sm font-medium text-white-400 hover:text-purple-400 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-purple-500 ter:transition-all after:duration-300 hover:after:w-full"
+                    className="text-sm font-bold text-white-400 hover:text-purple-500 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-purple-500 ter:transition-all after:duration-300 hover:after:w-full"
                   >
                     {item.name}
                   </a>

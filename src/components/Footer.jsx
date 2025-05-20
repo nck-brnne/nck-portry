@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black dark:text-white">
+    <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
       <div className="max-w-screen-xl mx-auto pt-24 lg:pt-48 pb-24 px-12">
         <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row items-start lg:items-center lg:justify-between">
           <div className="flex flex-col gap-8">
@@ -40,7 +40,7 @@ const Footer = () => {
                   Nick Brienne Martinez
                 </span>
               </h6>
-              <h6>building in public </h6>
+              <h6>© 2025 Nick-Portry. All rights reserved.</h6>
             </div>
           </div>
 

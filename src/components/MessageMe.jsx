@@ -4,7 +4,7 @@ import IconButton from './IconButton';
 
 const MessageMe = () => {
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black dark:text-white">
+    <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
       <section id="MessageMe">
         <div className="w-full h-px bg-white opacity-20 mb-10"></div>
         <div className="max-w-screen-xl mx-auto pt-3 flex flex-col items-center">

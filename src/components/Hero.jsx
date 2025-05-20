@@ -2,11 +2,11 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black dark:text-white">
+    <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
       <section id="Hero" className="px-5 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col py-20 lg:pt-24">
           <div className="flex flex-col items-center md:items-start">
-            <div className="inline-flex items-center rounded-xl border border-black/20 dark:border-white/20 px-4 py-2 text-sm font-medium mt-10">
+            <div className="inline-flex items-center rounded-xl border border-black/10 dark:border-white/10 px-4 py-2 text-sm font-medium mt-10">
               <span className="relative flex h-3 w-3 mr-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-purple-400 opacity-75"></span>
                 <span className="relative inline-flex h-3 w-3 rounded-full bg-green-400"></span>
@@ -52,7 +52,7 @@ const Hero = () => {
               <div
                 className="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
                       flex flex-row items-center px-6 py-1 mr-1 text-md 
-                      border border-black/30 dark:border-white/10 hover:border-purple-500 
+                      border border-black/10 dark:border-white/10 hover:border-purple-500 
                       rounded-full text-center"
               >
                 <div class="rounded-full bg-emerald-500 w-3 h-3 mr-2"></div>
@@ -61,7 +61,7 @@ const Hero = () => {
               <div
                 class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
                       flex flex-row items-center px-6 py-1 mr-1 text-md 
-                      border border-black/30 dark:border-white/20 hover:border-purple-500 
+                      border border-black/10 dark:border-white/10 hover:border-purple-500 
                       rounded-full text-center"
               >
                 <div class="rounded-full bg-red-500 w-3 h-3 mr-2"></div>
@@ -70,7 +70,7 @@ const Hero = () => {
               <div
                 class="cursor-pointer hover:bg-purple-950/40   transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
-                        border border-black/30 dark:border-white/20 hover:border-purple-500 
+                        border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
               >
                 <div class="rounded-full bg-cyan-500 w-3 h-3 mr-2"></div>
@@ -79,7 +79,7 @@ const Hero = () => {
               <div
                 class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
-                        border border-black/30 dark:border-white/20 hover:border-purple-500 
+                        border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
               >
                 <div class="rounded-full bg-purple-500 w-3 h-3 mr-2"></div>
@@ -88,7 +88,7 @@ const Hero = () => {
               <div
                 class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
-                        border border-black/30 dark:border-white/20 hover:border-purple-500 
+                        border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
               >
                 <div class="rounded-full bg-pink-500 w-3 h-3 mr-2"></div>
@@ -97,7 +97,7 @@ const Hero = () => {
               <div
                 class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
-                        border border-black/30 dark:border-white/20 hover:border-purple-500 
+                        border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
               >
                 <div class="rounded-full bg-yellow-500 w-3 h-3 mr-2"></div>
@@ -109,7 +109,7 @@ const Hero = () => {
                 href="#MessageMe"
                 className="w-auto sm:w-full transition-all duration-300 ease-in-out group relative inline-flex items-center justify-center 
                                   text-xs sm:text-sm font-light text-white-300 bg-neutral-600/40
-                                  px-6 sm:px-10 lg:px-12 py-2 sm:py-2.5 rounded-md sm:rounded-lg border border-purple-200 
+                                  px-6 sm:px-10 lg:px-12 py-2 sm:py-2.5 rounded-md sm:rounded-lg border border-white/20
                                   hover:text-sky-400 hover:bg-purple-200/20 hover:border-sky-400"
               >
                 <span className="transition-all duration-300 ease-in-out group-hover:mr-5">
@@ -137,7 +137,7 @@ const Hero = () => {
                 href="#Project"
                 className="w-auto sm:w-full transition-all duration-300 ease-in-out group relative inline-flex items-center justify-center 
                       text-xs sm:text-sm font-light text-white-300 bg-neutral-600/40 
-                      px-6 sm:px-10 lg:px-12 py-2 sm:py-2.5 rounded-md sm:rounded-lg border border-neutral-200 hover:border-sky-400
+                      px-6 sm:px-10 lg:px-12 py-2 sm:py-2.5 rounded-md sm:rounded-lg  hover:border-sky-400 border border-white/20
                       hover:bg-purple-200/20 hover:border-purple-700/80  hover:text-sky-400"
               >
                 PROJECTS

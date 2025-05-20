@@ -23,31 +23,30 @@ const project = [
 ];
 const Project = () => {
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black dark:text-white">
+    <section className="bg-gray-200 dark:bg-gray-900 text-black/75 dark:text-white/70">
       <section id="Project">
-        <div className="w-full h-px bg-white opacity-20 mb-10"></div>
         <div
           id="projects"
           class="flex flex-col py-20 lg:py-20 px-4 lg:px-20 scroll-mt-24"
         >
-          <h1 class="mb-5 text-2xl font-black uppercase text-center text-purple-400">
+          <h1 class="mb-5 text-2xl font-black uppercase text-center text-purple-500">
             Projects
           </h1>
 
           <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
             {project.map((prj, index) => (
-              <div class="group bg-neutral-400/30 flex flex-col justify-between h-full border-white/10 rounded-lg p-5 border-[1px] transition-all duration-300 ease-in-out hover:shadow-sm hover:border-purple-500 hover:bg-orange-900/5 cursor-default">
+              <div class="group bg-neutral-400/10 flex flex-col justify-between h-full border-white/10 rounded-lg p-5 border-[1px] transition-all duration-300 ease-in-out hover:shadow-sm hover:border-purple-500 hover:bg-orange-900/5 cursor-default">
                 <div class="flex flex-col">
-                  <h1 class="font-manrope text-2xl font-bold group-hover:text-purple-600 transition-all duration-300 ease-in-out">
+                  <h1 class="font-manrope text-2xl font-bold group-hover:text-purple-500 transition-all duration-300 ease-in-out">
                     {prj.name}
                   </h1>
-                  <p className="font-manrope-semibold text-lg text-white-300 mt-3 text-justify">
+                  <p className="font-manrope-semibold text-lg text-white-300 mt-2 text-justify">
                     {prj.desc}
                   </p>
                 </div>
                 <div class="flex flex-wrap gap-2 justify-start mt-5">
                   {prj.stack.map((tchstack, index) => (
-                    <span class="text-xs rounded-full px-4 py-1 bg-neutral-500 border border-purple-700 cursor-default">
+                    <span class="text-xs font-bold rounded-full px-4 py-1 bg-neutral-500/20 border cursor-default">
                       {tchstack}
                     </span>
                   ))}
