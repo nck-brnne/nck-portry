@@ -4,11 +4,11 @@ const TechStack = () => {
   return (
     <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
       <section id="TechStack" className="px-5 sm:px-6 lg:px-8">
-        <div className="w-full grid grid-cols-1 py-20">
+        <div className="w-full grid grid-cols-1 py-5">
           <h1 class="mb-5 text-2xl font-black uppercase text-center text-purple-500">
             Tech Stack
           </h1>
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-5">
             <div>
               <h2 className="text-md mb-4 text-white-200/10 uppercase text-center">
                 🚀 Framework and Database Development{' '}

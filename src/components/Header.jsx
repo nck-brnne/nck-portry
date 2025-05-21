@@ -7,7 +7,7 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
+    <section className="bg-gray-200 dark:bg-gray-900 text-black/70 dark:text-white/70">
       <div className="fixed top-0 left-0 right-0 z-50 px-4 py-4">
         <div className="max-w-7xl mx-auto border border-black/10 dark:border-white/10 rounded-2xl bg-transparent backdrop-blur-md">
           <div className="flex justify-between items-center px-8 py-3">

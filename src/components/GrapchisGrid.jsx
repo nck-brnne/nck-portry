@@ -12,14 +12,19 @@ const images = [
   '/data/fanta.jpg',
   '/data/rentcont.jpg',
   '/data/grain.jpg',
+  '/data/clean.jpg',
 ];
 
 const GraphicsGrid = () => {
   return (
-    <div className="columns-1 sm:Columns-2 lg:columns-3 py-10 md:py-10 gap-3">
+    <div className="columns-1 sm:Columns-2 lg:columns-3 py-10 md:py-5 gap-3">
       {images.map((src, index) => (
         <div key={index} className="mb-4 break-inside-avoid">
-          <img src={src} alt="" className="w-full object-cover" />
+          <img
+            src={src}
+            alt=""
+            className="w-full object-cover rounded-xl transform transition-transform duration-500 hover:scale-95"
+          />
         </div>
       ))}
     </div>

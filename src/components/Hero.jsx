@@ -13,12 +13,9 @@ const Hero = () => {
               </span>
               <span className="font-manrope"> Available for work </span>
             </div>
-            <h2 className="mt-5 mb-5  text-xl text-center md:text-left">
+            <h2 className="mt-5 mb-5  text-lg text-center md:text-left">
               Hi, I'm{' '}
-              <span className="font-bold italic text-purple-500 ml-1">
-                NICK BRIENNE
-              </span>
-              .
+              <span className="font-bold text-purple-500">Nick Brienne</span>.
             </h2>
 
             <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black text-center md:text-left">
@@ -26,31 +23,32 @@ const Hero = () => {
               <span className="mx-2 bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 bg-clip-text text-transparent animated-gradient">
                 Visual Design
               </span>
-              <span className="mx-3 lg:mx-3 pr-[2px] ">and</span>
+              <span className="mx-1 lg:mx-3 italic">and</span>
               <span className="mx-2 bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 bg-clip-text text-transparent animated-gradient">
                 Purposeful Graphics.
               </span>
             </h1>
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-2 mt-10 gap-3 md:gap-10 text-justify lg:text-l font-light tracking-narro">
+          <div className=" grid grid-cols-1 md:grid-cols-2 mt-10 gap-3 md:gap-10 text-justify text-lg">
             <p className="font-manrope-semibold">
-              I LOVE TO DESIGN. ANYTHING I IMAGINE (AS LONG AS IT’S POSSIBLE), I
-              CAN BRING TO LIFE. LOGOS, POSTERS, SOCIAL MEDIA CONTENT, BRAND
-              IDENTITIES, UI DESIGNS, WEBSITE LAYOUTS, AND MORE.
+              I’m a dedicated Graphic Designer who values creativity, clarity,
+              and consistency in every project. I approach each design with
+              focus and commitment, always aiming to meet the goals and needs of
+              the client.
             </p>
             <p className="font-manrope-semibold">
-              I HAVE SO MUCH PASSION FOR DESIGN THAT I CREATE AS OFTEN AS I CAN.
-              I LOVE EXPLORING NEW STYLES, TOOLS, AND TECHNIQUES, THEN BRINGING
-              THEM INTO MY WORK. I JUST ENJOY SOLVING VISUAL CHALLENGES WITHIN
-              THE GIVEN LIMITS, OF COURSE.
+              I’m also a Front-End Developer who builds clean, responsive, and
+              user-friendly interfaces. I turn ideas into functional designs,
+              making sure every detail works smoothly across different devices
+              and platforms.
             </p>
           </div>
 
           {/* Works */}
-          <div class="grid grid-cols-1 xl:grid-cols-2 h-fit justify-center items-center lg:justify-start gap-5">
+          <div class="grid grid-cols-1 xl:grid-cols-2 h-fit justify-center items-center lg:justify-start">
             <div className="flex flex-wrap gap-2 justify-center md:justify-start mt-8">
               <div
-                className="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
+                className="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
                       flex flex-row items-center px-6 py-1 mr-1 text-md 
                       border border-black/10 dark:border-white/10 hover:border-purple-500 
                       rounded-full text-center"
@@ -59,7 +57,7 @@ const Hero = () => {
                 Packaging Design
               </div>
               <div
-                class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
+                class="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
                       flex flex-row items-center px-6 py-1 mr-1 text-md 
                       border border-black/10 dark:border-white/10 hover:border-purple-500 
                       rounded-full text-center"
@@ -68,7 +66,7 @@ const Hero = () => {
                 Social Media
               </div>
               <div
-                class="cursor-pointer hover:bg-purple-950/40   transition-all duration-300 
+                class="cursor-pointer hover:bg-purple-950/20   transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
                         border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
@@ -77,7 +75,7 @@ const Hero = () => {
                 Poster Design
               </div>
               <div
-                class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
+                class="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
                         border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
@@ -86,7 +84,7 @@ const Hero = () => {
                 Graphic Design
               </div>
               <div
-                class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
+                class="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
                         border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
@@ -95,7 +93,7 @@ const Hero = () => {
                 Web Development
               </div>
               <div
-                class="cursor-pointer hover:bg-purple-950/40 transition-all duration-300 
+                class="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
                         border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
@@ -104,7 +102,7 @@ const Hero = () => {
                 Logo Design
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-center mt-11">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-center mt-7">
               <a
                 href="#MessageMe"
                 className="w-auto sm:w-full transition-all duration-300 ease-in-out group relative inline-flex items-center justify-center 

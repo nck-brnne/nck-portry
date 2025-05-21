@@ -6,7 +6,6 @@ const MessageMe = () => {
   return (
     <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
       <section id="MessageMe">
-        <div className="w-full h-px bg-white opacity-20 mb-10"></div>
         <div className="max-w-screen-xl mx-auto pt-3 flex flex-col items-center">
           {/* Heading and Description */}
           <div className="flex flex-col items-center justify-center text-center w-full py-6 gap-6">
@@ -14,8 +13,8 @@ const MessageMe = () => {
               LET'S WORK
             </h2>
             <h6 className="text-xs lg:text-sm px-4 text-primary/40 uppercase">
-              I'm currently looking for new opportunities. Whether you have a
-              question or just want to say hi, my inbox is always open.
+              If you have a project in mind or need a designer and front-end
+              developer to bring your ideas to life, feel free to reach out.
             </h6>
 
             {/* Social Icon Buttons */}

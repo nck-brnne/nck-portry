@@ -9,8 +9,8 @@ const Graphics = () => {
           <h1 className="mb-5 text-2xl font-black uppercase text-center text-purple-500">
             Recent Works
           </h1>
-          <h2 className="text-md mb-0 text-white-400 uppercase text-center">
-            Graphic, Artwork Design
+          <h2 className="text-md  text-white-400 uppercase text-center">
+            ✨ Graphic, Artwork Design ✨
           </h2>
 
           {/* ✅ Import your new responsive grid here */}

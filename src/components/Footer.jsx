@@ -36,17 +36,15 @@ const Footer = () => {
             <div className="font-manrope text-muted-foreground text-sm">
               <h6>
                 made by {''}
-                <span className="text-purple-500 italic">
-                  Nick Brienne Martinez
-                </span>
+                <span className="text-purple-500 italic">Nick Martinez</span>
               </h6>
               <h6>© 2025 Nick-Portry. All rights reserved.</h6>
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-3 lg:gap-20 text-muted-foreground text-xs">
+          <div className="flex flex-col lg:flex-row gap-3 lg:gap-20 text-muted-foreground text-sm">
             <div className="font-manrope flex flex-col gap-3">
-              <a className="hover:underline underline-offset-4" href="#Body">
+              <a className="hover:underline underline-offset-4" href="#Hero">
                 Home
               </a>
               <a
@@ -63,12 +61,6 @@ const Footer = () => {
                 href="#Graphics"
               >
                 Recent Works
-              </a>
-              <a
-                className="hover:underline underline-offset-4"
-                href="#MessagMe"
-              >
-                Contact Me
               </a>
             </div>
           </div>
