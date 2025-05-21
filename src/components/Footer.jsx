@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
+    <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/70">
       <div className="max-w-screen-xl mx-auto pt-24 lg:pt-48 pb-24 px-12">
         <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row items-start lg:items-center lg:justify-between">
           <div className="flex flex-col gap-8">
