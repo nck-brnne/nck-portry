@@ -19,7 +19,7 @@ const GraphicsGrid = () => {
   return (
     <div className="columns-1 sm:Columns-2 lg:columns-3 py-10 md:py-5 gap-3">
       {images.map((src, index) => (
-        <div key={index} className="mb-4 break-inside-avoid">
+        <div key={index} className="mb-3 break-inside-avoid">
           <img
             src={src}
             alt=""
