@@ -29,7 +29,7 @@ const Hero = () => {
               </span>
             </h1>
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-2 mt-10 gap-3 md:gap-10 text-justify text-lg">
+          <div className=" grid grid-cols-1 md:grid-cols-2 mt-10 gap-5 md:gap-10 text-justify text-lg">
             <p className="font-manrope-semibold">
               I’m a dedicated Graphic Designer who values creativity, clarity,
               and consistency in every project. I approach each design with
