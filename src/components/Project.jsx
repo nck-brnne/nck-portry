@@ -27,7 +27,7 @@ const Project = () => {
       <section id="Project">
         <div
           id="projects"
-          class="flex flex-col py-20 px-4 lg:px-20 scroll-mt-24"
+          class="flex flex-col py-3 px-4 lg:px-20 scroll-mt-24"
         >
           <h1 class="mb-5 text-2xl font-black uppercase text-center text-purple-500">
             Projects

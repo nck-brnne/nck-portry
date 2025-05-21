@@ -35,7 +35,7 @@ const SkillProgress = ({ iconPath, name, progress, colorClass }) => {
       <div className="flex-1">
         <div className="text-sm italic text-left">{name}</div>
         <div
-          className="w-full bg-gray-700/30 h-4 rounded-full overflow-hidden mt-1 cursor-pointer transform transition-transform duration-500 hover:scale-105"
+          className="w-full bg-gray-700/20 h-4 rounded-full overflow-hidden mt-1 cursor-pointer transform transition-transform duration-500 hover:scale-105"
           ref={barRef}
         >
           <div
