@@ -21,8 +21,9 @@ const SkillProgress = ({ iconPath, name, progress, colorClass }) => {
   }, []);
 
   return (
-    <div className="flex items-center space-x-3 w-full max-w-md mb-3 justify-center flex-nowrap ml-12">
-      <div className="flex-shrink-0 w-8 h-8 ml-8">
+    <div className="w-full max-w-md mx-auto flex items-center space-x-4 mb-4">
+      {/* Icon */}
+      <div className="w-10 h-10 flex-shrink-0">
         <img
           src={iconPath}
           alt={`${name} icon`}
@@ -30,11 +31,11 @@ const SkillProgress = ({ iconPath, name, progress, colorClass }) => {
         />
       </div>
 
-      <div className="flex flex-col flex-grow">
-        <div className="italic text-left text-sm">{name}</div>
-
+      {/* Label + Progress */}
+      <div className="flex-1">
+        <div className="text-sm italic text-left">{name}</div>
         <div
-          className="w-64 max-w-[280px] rounded-full bg-gray-700/30 mt-0 h-4 overflow-hidden cursor-pointer transform transition-transform duration-500 hover:scale-105"
+          className="w-full bg-gray-700/30 h-4 rounded-full overflow-hidden mt-1 cursor-pointer transform transition-transform duration-500 hover:scale-105"
           ref={barRef}
         >
           <div
@@ -60,13 +61,13 @@ function SoftwareSkills() {
     {
       name: 'Photoshop',
       progress: 75,
-      iconPath: '/icons/Photoshop.svg',
+      iconPath: '/icons/photoshop.svg',
       colorClass: 'bg-blue-950',
     },
     {
       name: 'Adobe Illustrator',
       progress: 60,
-      iconPath: '/icons/Illustrator.svg',
+      iconPath: '/icons/illustrator.svg',
       colorClass: 'bg-yellow-800',
     },
     {
@@ -79,7 +80,7 @@ function SoftwareSkills() {
 
   return (
     <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
-      <div className="flex flex-col items-center justify-center p-5">
+      <div className="w-full max-w-4xl mx-auto px-4 py-10 flex flex-col items-center">
         <h1 className="mb-8 text-2xl font-black uppercase text-center text-purple-500">
           Software Skills
         </h1>
