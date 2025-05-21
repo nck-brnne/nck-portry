@@ -44,7 +44,7 @@ const TechStack = () => {
             </div>
             <div>
               <h2 className="text-md mb-4 text-white-200/10 uppercase text-center">
-                🎨 Design
+                🎨 Software Design
               </h2>
               <div className="flex flex-wrap justify-center gap-3">
                 {[

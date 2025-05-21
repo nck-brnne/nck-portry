@@ -6,6 +6,7 @@ import Project from './components/Project.jsx';
 import Graphics from './components/Graphics.tsx';
 import MessageMe from './components/MessageMe.jsx';
 import Footer from './components/Footer.jsx';
+import SoftwareSkills from './components/SoftwareSkills.jsx';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Hero />
       <TechStack />
+      <SoftwareSkills />
       <Project />
       <Graphics />
       <MessageMe />
