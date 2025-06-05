@@ -3,16 +3,15 @@ import React from 'react';
 const images = [
   '/data/homies.jpg',
   '/data/solitude.jpg',
-  '/data/lambo.jpg',
+  '/data/Valir.jpg',
   '/data/yz.jpg',
-  '/data/Lisa.jpg',
+  '/data/Vans.jpg',
   '/data/mylogo.jpg',
-  '/data/valir.jpg',
   '/data/stygian.jpg',
-  '/data/fanta.jpg',
-  '/data/rentcont.jpg',
+  '/data/Pasta.jpg',
   '/data/grain.jpg',
   '/data/clean.jpg',
+  '/data/Pizza.jpg',
 ];
 
 const GraphicsGrid = () => {
