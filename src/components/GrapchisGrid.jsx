@@ -3,8 +3,7 @@ import React from 'react';
 const images = [
   '/data/homies.jpg',
   '/data/solitude.jpg',
-  '/data/Valir.jpg',
-  '/data/yz.jpg',
+  '/data/Bonchon.jpg',
   '/data/Vans.jpg',
   '/data/mylogo.jpg',
   '/data/stygian.jpg',
@@ -12,6 +11,7 @@ const images = [
   '/data/grain.jpg',
   '/data/clean.jpg',
   '/data/Pizza.jpg',
+  '/data/colet.jpg',
 ];
 
 const GraphicsGrid = () => {
