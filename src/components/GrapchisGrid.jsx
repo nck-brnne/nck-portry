@@ -12,6 +12,7 @@ const images = [
   '/data/clean.jpg',
   '/data/Pizza.jpg',
   '/data/colet.jpg',
+  '/data/IceWall.jpg',
 ];
 
 const GraphicsGrid = () => {
