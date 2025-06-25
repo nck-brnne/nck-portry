@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ToggleSwitch from './ToggleSwitch';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +9,12 @@ const Header = () => {
 
   return (
     <section className="bg-gray-200 dark:bg-gray-900 text-black/70 dark:text-white/70">
-      <div className="fixed top-0 left-0 right-0 z-50 px-4 py-4">
+      <motion.div
+        initial={{ y: -40, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+        className="fixed top-0 left-0 right-0 z-50 px-4 py-4"
+      >
         <div className="max-w-7xl mx-auto border border-black/10 dark:border-white/10 rounded-2xl bg-transparent backdrop-blur-md">
           <div className="flex justify-between items-center px-8 py-3">
             <div className="flex items-center">
@@ -84,7 +90,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -6,19 +7,58 @@ const Hero = () => {
       <section id="Hero" className="px-5 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col py-20 lg:pt-24">
           <div className="flex flex-col items-center md:items-start">
-            <div className="inline-flex items-center rounded-xl border border-black/10 dark:border-white/10 px-4 py-2 text-sm font-medium mt-10">
-              <span className="relative flex h-3 w-3 mr-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-purple-400 opacity-75"></span>
-                <span className="relative inline-flex h-3 w-3 rounded-full bg-green-400"></span>
-              </span>
-              <span className="font-manrope"> Available for work </span>
-            </div>
-            <h2 className="mt-5 mb-5  text-lg text-center md:text-left">
-              Hi, I'm{' '}
-              <span className="font-bold text-purple-500">Nick Brienne</span>.
-            </h2>
+            <motion.div
+              initial={{
+                y: -15,
+                opacity: 0,
+              }}
+              whileInView={{
+                y: 0,
+                filter: 'blur(0px)',
+                opacity: 1,
+              }}
+              transition={{
+                duration: 1.5,
+                delay: 0.5,
+                ease: 'easeOut',
+              }}
+              viewport={{ once: true, amount: 0.5 }}
+            >
+              <div className="inline-flex items-center rounded-xl border border-black/10 dark:border-white/10 px-4 py-2 text-sm font-medium mt-10">
+                <span className="relative flex h-3 w-3 mr-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-purple-400 opacity-75"></span>
+                  <span className="relative inline-flex h-3 w-3 rounded-full bg-green-400"></span>
+                </span>
+                <span className="font-manrope"> Available for work </span>
+              </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black text-center md:text-left">
+              <h2 className="mt-5 mb-5  text-lg text-center md:text-left">
+                Hi, I'm{' '}
+                <span className="font-bold text-purple-500">Nick Brienne</span>.
+              </h2>
+            </motion.div>
+            <motion.h1
+              initial={{
+                rotateX: 24,
+                y: 25,
+                skewX: -20,
+                filter: 'blur(10px)',
+                opacity: 0,
+              }}
+              whileInView={{
+                rotateX: 0,
+                y: 0,
+                skewX: 0,
+                filter: 'blur(0px)',
+                opacity: 1,
+              }}
+              transition={{
+                duration: 1.5,
+                ease: 'easeOut',
+              }}
+              viewport={{ once: true, amount: 0.5 }}
+              className="text-3xl sm:text-4xl lg:text-7xl font-black text-center md:text-left"
+            >
               Creating
               <span className="mx-2 bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 bg-clip-text text-transparent animated-gradient">
                 Visual Design
@@ -27,9 +67,27 @@ const Hero = () => {
               <span className="mx-2 bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-500 bg-clip-text text-transparent animated-gradient">
                 Purposeful Graphics.
               </span>
-            </h1>
+            </motion.h1>
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-2 mt-10 gap-5 md:gap-10 text-justify text-lg">
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 1.2,
+              ease: 'easeOut',
+            }}
+            viewport={{
+              once: true,
+              amount: 0.3,
+            }}
+            className=" grid grid-cols-1 md:grid-cols-2 mt-10 gap-5 md:gap-10 text-justify text-lg"
+          >
             <p className="font-manrope-semibold">
               I’m a dedicated Graphic Designer who values creativity, clarity,
               and consistency in every project. I approach each design with
@@ -42,18 +100,38 @@ const Hero = () => {
               making sure every detail works smoothly across different devices
               and platforms.
             </p>
-          </div>
+          </motion.div>
 
           {/* Works */}
           <div class="grid grid-cols-1 xl:grid-cols-2 h-fit justify-center items-center lg:justify-start">
-            <div className="flex flex-wrap gap-2 justify-center md:justify-start mt-8">
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 20,
+                filter: 'blur(10px)',
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                filter: 'blur(0px)',
+              }}
+              transition={{
+                duration: 1.2,
+                ease: 'easeOut',
+              }}
+              viewport={{
+                once: true,
+                amount: 0.2,
+              }}
+              className="flex flex-wrap gap-2 justify-center md:justify-start mt-8"
+            >
               <div
                 className="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
                       flex flex-row items-center px-6 py-1 mr-1 text-md 
                       border border-black/10 dark:border-white/10 hover:border-purple-500 
                       rounded-full text-center"
               >
-                <div class="rounded-full bg-emerald-500 w-3 h-3 mr-2"></div>
+                <div className="rounded-full bg-emerald-500 w-3 h-3 mr-2"></div>
                 Packaging Design
               </div>
               <div
@@ -62,11 +140,11 @@ const Hero = () => {
                       border border-black/10 dark:border-white/10 hover:border-purple-500 
                       rounded-full text-center"
               >
-                <div class="rounded-full bg-red-500 w-3 h-3 mr-2"></div>
+                <div className="rounded-full bg-red-500 w-3 h-3 mr-2"></div>
                 Social Media
               </div>
               <div
-                class="cursor-pointer hover:bg-purple-950/20   transition-all duration-300 
+                className="cursor-pointer hover:bg-purple-950/20   transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
                         border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
@@ -75,33 +153,33 @@ const Hero = () => {
                 Poster Design
               </div>
               <div
-                class="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
+                className="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
                         border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
               >
-                <div class="rounded-full bg-purple-500 w-3 h-3 mr-2"></div>
+                <div className="rounded-full bg-purple-500 w-3 h-3 mr-2"></div>
                 Graphic Design
               </div>
               <div
-                class="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
+                className="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
                         border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
               >
-                <div class="rounded-full bg-pink-500 w-3 h-3 mr-2"></div>
+                <div className="rounded-full bg-pink-500 w-3 h-3 mr-2"></div>
                 Web Development
               </div>
               <div
-                class="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
+                className="cursor-pointer hover:bg-purple-950/20 transition-all duration-300 
                         flex flex-row items-center px-6 py-1 mr-1 text-md 
                         border border-black/10 dark:border-white/10 hover:border-purple-500 
                         rounded-full text-center"
               >
-                <div class="rounded-full bg-yellow-500 w-3 h-3 mr-2"></div>
+                <div className="rounded-full bg-yellow-500 w-3 h-3 mr-2"></div>
                 Logo Design
               </div>
-            </div>
+            </motion.div>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-center mt-7">
               <a
                 href="#MessageMe"
