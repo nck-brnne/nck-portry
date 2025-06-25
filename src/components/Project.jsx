@@ -20,6 +20,12 @@ const project = [
         their population through charts like bar and pie charts, making it easy to see how many members are in each org. Built with Django and Python.`,
     stack: ['Python', 'TablePlus', 'Django', 'Bootstrap', 'PHP'],
   },
+  {
+    name: 'Starbucks Café ☕',
+    desc: `A basic HTML and CSS web page that mimics a Starbucks-style café. It showcases featured drinks and products, designed for practice and learning layout, 
+    styling, and responsive design. Simple, clean, and inspired by real-world brands.`,
+    stack: ['CSS', 'HTML'],
+  },
 ];
 const Project = () => {
   return (
@@ -27,11 +33,14 @@ const Project = () => {
       <section id="Project">
         <div
           id="projects"
-          class="flex flex-col py-3 px-4 lg:px-20 scroll-mt-24"
+          class="flex flex-col py-10 px-4 lg:px-20 scroll-mt-24"
         >
           <h1 class="mb-5 text-2xl font-black uppercase text-center text-purple-500">
             Projects
           </h1>
+          <p className="small w-full opacity-60 text-center mb-5 uppercase">
+            Software Projects
+          </p>
 
           <div class="grid grid-cols-1 xl:grid-cols-2 gap-5">
             {project.map((prj, index) => (

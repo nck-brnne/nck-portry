@@ -9,7 +9,7 @@ const Hero = () => {
           <div className="flex flex-col items-center md:items-start">
             <motion.div
               initial={{
-                y: -15,
+                y: -40,
                 opacity: 0,
               }}
               whileInView={{
@@ -19,10 +19,9 @@ const Hero = () => {
               }}
               transition={{
                 duration: 1.5,
-                delay: 0.5,
+                delay: 0.1,
                 ease: 'easeOut',
               }}
-              viewport={{ once: true, amount: 0.5 }}
             >
               <div className="inline-flex items-center rounded-xl border border-black/10 dark:border-white/10 px-4 py-2 text-sm font-medium mt-10">
                 <span className="relative flex h-3 w-3 mr-2">
@@ -40,7 +39,7 @@ const Hero = () => {
             <motion.h1
               initial={{
                 rotateX: 24,
-                y: 25,
+                y: 40,
                 skewX: -20,
                 filter: 'blur(10px)',
                 opacity: 0,
@@ -54,9 +53,9 @@ const Hero = () => {
               }}
               transition={{
                 duration: 1.5,
+                delay: 0.1,
                 ease: 'easeOut',
               }}
-              viewport={{ once: true, amount: 0.5 }}
               className="text-3xl sm:text-4xl lg:text-7xl font-black text-center md:text-left"
             >
               Creating
@@ -72,19 +71,16 @@ const Hero = () => {
           <motion.div
             initial={{
               opacity: 0,
-              y: 20,
+              y: 40,
             }}
             whileInView={{
               opacity: 1,
               y: 0,
             }}
             transition={{
-              duration: 1.2,
+              duration: 1.5,
+              delay: 0.1,
               ease: 'easeOut',
-            }}
-            viewport={{
-              once: true,
-              amount: 0.3,
             }}
             className=" grid grid-cols-1 md:grid-cols-2 mt-10 gap-5 md:gap-10 text-justify text-lg"
           >
@@ -107,21 +103,16 @@ const Hero = () => {
             <motion.div
               initial={{
                 opacity: 0,
-                y: 20,
-                filter: 'blur(10px)',
+                y: 40,
               }}
               whileInView={{
                 opacity: 1,
                 y: 0,
-                filter: 'blur(0px)',
               }}
               transition={{
-                duration: 1.2,
+                duration: 1.5,
+                delay: 0.1,
                 ease: 'easeOut',
-              }}
-              viewport={{
-                once: true,
-                amount: 0.2,
               }}
               className="flex flex-wrap gap-2 justify-center md:justify-start mt-8"
             >
@@ -180,7 +171,22 @@ const Hero = () => {
                 Logo Design
               </div>
             </motion.div>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-center mt-7">
+
+            <motion.div
+              initial={{
+                y: -40,
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 1,
+                ease: 'easeOut',
+              }}
+              className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-center mt-7"
+            >
               <a
                 href="#MessageMe"
                 className="w-auto sm:w-full transition-all duration-300 ease-in-out group relative inline-flex items-center justify-center 
@@ -218,7 +224,7 @@ const Hero = () => {
               >
                 PROJECTS
               </a>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
