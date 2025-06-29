@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 const TechStack = () => {
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
+    <section className="bg-gray-200  dark:bg-black/10 text-black/80 dark:text-white/75">
       <section id="TechStack" className="px-5 sm:px-6 lg:px-8">
         <motion.div
           initial={{
-            y: 25,
+            y: 40,
             opacity: 0,
           }}
-          animate={{
+          whileInView={{
             y: 0,
             opacity: 1,
           }}
@@ -29,10 +29,10 @@ const TechStack = () => {
           <div>
             <motion.div
               initial={{
-                y: 25,
+                y: 40,
                 opacity: 0,
               }}
-              animate={{
+              whileInView={{
                 y: 0,
                 opacity: 1,
               }}

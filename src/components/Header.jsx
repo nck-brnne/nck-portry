@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ToggleSwitch from './ToggleSwitch';
 import { motion } from 'framer-motion';
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-
   return (
     <section className="bg-gray-200 dark:bg-gray-900 text-black/70 dark:text-white/70">
       <motion.div
@@ -69,24 +65,7 @@ const Header = () => {
 
             {/* Mobile Menu Button */}
             <div className="md:hidden">
-              <button
-                onClick={toggleMenu}
-                className="inline-flex items-center justify-center p-2 rounded-lg text-black dark:text-white hover:opacity-80 focus:outline-none"
-              >
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
+              <ToggleSwitch className="flex md:hidden" />
             </div>
           </div>
         </div>

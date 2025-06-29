@@ -29,7 +29,7 @@ const project = [
 ];
 const Project = () => {
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black/75 dark:text-white/70">
+    <section className="bg-gray-200 dark:bg-black/10 text-black/75 dark:text-white/70">
       <section id="Project">
         <div
           id="projects"

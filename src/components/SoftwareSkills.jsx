@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
+import { motion } from 'framer-motion';
+
 const SkillProgress = ({ iconPath, name, progress, colorClass }) => {
   const [visible, setVisible] = useState(false);
   const barRef = useRef(null);
@@ -9,19 +11,38 @@ const SkillProgress = ({ iconPath, name, progress, colorClass }) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setVisible(true);
-          observer.disconnect();
+        } else {
+          setVisible(false);
         }
       },
       { threshold: 0.5 }
     );
+
     if (barRef.current) {
       observer.observe(barRef.current);
     }
+
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div className="w-full max-w-md mx-auto flex items-center space-x-4 mb-4">
+    <motion.div
+      initial={{
+        y: -40,
+        opacity: 0,
+      }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1.5,
+        delay: 0.1,
+        ease: 'easeOut',
+      }}
+      div
+      className="w-full max-w-md mx-auto flex items-center space-x-4 mb-4"
+    >
       {/* Icon */}
       <div className="w-10 h-10 flex-shrink-0">
         <img
@@ -38,15 +59,17 @@ const SkillProgress = ({ iconPath, name, progress, colorClass }) => {
           className="w-full bg-gray-700/20 h-4 rounded-full overflow-hidden mt-1 cursor-pointer transform transition-transform duration-500 hover:scale-105"
           ref={barRef}
         >
-          <div
-            className={`h-full ${colorClass} rounded-full text-white text-xs font-medium flex items-center justify-center transition-[width] duration-1000 ease-in-out`}
-            style={{ width: visible ? `${progress}%` : '0%' }}
+          <motion.div
+            className={`h-full ${colorClass} rounded-full text-white text-xs font-medium flex items-center justify-center`}
+            initial={{ width: 0 }}
+            animate={{ width: visible ? `${progress}%` : '0%' }}
+            transition={{ duration: 1, ease: 'easeOut' }}
           >
             {visible ? `${progress}%` : '0%'}
-          </div>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -79,11 +102,28 @@ function SoftwareSkills() {
   ];
 
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
+    <section className="bg-gray-200 dark:bg-black/10 text-black/80 dark:text-white/75">
       <div className="w-full max-w-4xl mx-auto px-4 py-10 flex flex-col items-center">
-        <h1 className="mb-8 text-2xl font-black uppercase text-center text-purple-500">
-          Software Skills
-        </h1>
+        <motion.div
+          initial={{
+            y: 25,
+            opacity: 0,
+          }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 1.5,
+            delay: 0.1,
+            ease: 'easeOut',
+          }}
+        >
+          <h1 className="mb-8 text-2xl font-black uppercase text-center text-purple-500">
+            Software Skills
+          </h1>
+        </motion.div>
+
         {skills.map((skill) => (
           <SkillProgress
             key={skill.name}

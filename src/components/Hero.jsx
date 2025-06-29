@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-black/80 dark:text-white/75">
+    <section className="bg-gray-200 dark:bg-black/10 text-black/80 dark:text-white/75">
       <section id="Hero" className="px-5 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col py-20 lg:pt-24">
           <div className="flex flex-col items-center md:items-start">
@@ -70,8 +70,8 @@ const Hero = () => {
           </div>
           <motion.div
             initial={{
-              opacity: 0,
               y: 40,
+              opacity: 0,
             }}
             whileInView={{
               opacity: 1,
