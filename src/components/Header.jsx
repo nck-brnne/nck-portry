@@ -19,8 +19,8 @@ const Header = () => {
                 <img
                   src="/images/logo-black.png"
                   alt="Logo Light"
-                  width={40}
-                  height={40}
+                  width={30}
+                  height={30}
                   className="h-9 w-auto block dark:hidden"
                   loading="lazy"
                   decoding="async"
@@ -30,8 +30,8 @@ const Header = () => {
                 <img
                   src="/images/logo-white.png"
                   alt="Logo Dark"
-                  width={40}
-                  height={40}
+                  width={30}
+                  height={30}
                   className="h-9 w-auto hidden dark:block"
                   loading="lazy"
                   decoding="async"
