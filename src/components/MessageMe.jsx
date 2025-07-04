@@ -1,5 +1,5 @@
 import React from 'react';
-import { GitHub, Twitter, Facebook, Instagram, Linkedin } from 'react-feather';
+import { GitHub, Facebook, Instagram, Linkedin } from 'react-feather';
 import IconButton from './IconButton';
 import { motion } from 'framer-motion';
 import TrickWords from './TrickWords';
@@ -25,36 +25,66 @@ const MessageMe = () => {
               <TrickWords text="If you have a project in mind or need a designer and front-end developer to bring your ideas to life, feel free to reach out." />
             </h6>
           </motion.div>
-          {/* Social Icon Buttons */}
+          {/* Social Icon Buttons with Motion */}
           <div className="flex flex-wrap gap-3 justify-center mt-4">
-            <IconButton text="Github">
-              <GitHub size={20} />
-            </IconButton>
-            <a
-              href="https://www.facebook.com/Amenesus"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IconButton text="Facebook" color="bg-blue-500">
-                <Facebook size={20} />
-              </IconButton>
-            </a>
-            <IconButton
-              text="nck_brnne"
-              color="bg-gradient-to-tr from-yellow-500 to-purple-500 via-pink-500"
-            >
-              <Instagram size={20} />
-            </IconButton>
-            <IconButton text="Twitter" color="bg-sky-500">
-              <Twitter size={20} />
-            </IconButton>
-            <IconButton text="@nckk" color="bg-red-500">
-              <Linkedin size={20} />
-            </IconButton>
+            {[
+              {
+                text: 'Github',
+                icon: <GitHub size={20} />,
+                href: 'https://github.com/nck-brnne',
+              },
+
+              {
+                text: 'Facebok',
+                icon: <Facebook size={20} />,
+                color: 'bg-blue-500',
+                href: 'https://www.facebook.com/Amenesus',
+              },
+              {
+                text: 'Instagram',
+                icon: <Instagram size={20} />,
+                color:
+                  'bg-gradient-to-tr from-yellow-500 to-purple-500 via-pink-500',
+                href: 'https://www.instagram.com/nck.grphx/',
+              },
+              {
+                text: '@nckk',
+                icon: <Linkedin size={20} />,
+                color: 'bg-red-500',
+              },
+            ].map((item, index) => {
+              const iconElement = (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  transition={{ duration: 0.4, delay: index * 0.15 }}
+                >
+                  <IconButton text={item.text} color={item.color}>
+                    {item.icon}
+                  </IconButton>
+                </motion.div>
+              );
+
+              return item.href ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={index}
+                >
+                  {iconElement}
+                </a>
+              ) : (
+                iconElement
+              );
+            })}
           </div>
         </div>
       </section>
     </section>
   );
 };
+
 export default MessageMe;
